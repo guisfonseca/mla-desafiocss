@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #1d2127;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #383e46;
+    color: #aab2bc;
+    border: #444a52 2px solid;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.task::before {
+    content: "✔";
+    color: #274b28;
+    background-color: #6eb263;
+    padding: 3px 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "•";
+    font-size: 36px;
+    padding: 4px;
+    background-color: #383e46;
+    color: #444a52;
+    border-radius: 50%;
+    border-right: #444a52 2px solid;
+    position: absolute;
+    right: -12.5px;
+    width: 12px;
+    height: 12px;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.time {
+    color: #758286;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.result {
+    background-color: #383e46;
+    color: #aab2bc;
+    border: #444a52 2px solid;
+    border-radius: 0 8px 8px 8px;
+    padding: 0 20px 20px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.result::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "•";
+    font-size: 36px;
+    padding: 4px;
+    background-color: #383e46;
+    color: #444a52;
+    border-radius: 50%;
+    border-left: #444a52 2px solid;
+    position: absolute;
+    top: 41px;
+    left: -12.5px;
+    width: 12px;
+    height: 12px;
+}
+
+.result-title::before {
+    content: "Matrix: prepare-release-on-se...";
+    font-size: 18px;
+    background-color: #383e46;
+    padding: 10px 20px 0 10px;
+    text-wrap: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #444a52 2px solid;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    top: -30px;
+    left: -22px;
+}
+
+.result-title::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: -18px;
+    right: 26px;
+    border-left: #444a52 2px solid;
+    border-bottom: #444a52 2px solid;
+    border-radius: 0 0 0 8px;
+    box-shadow: -5px 6px 0 #393e47;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.status::before {
+    content: "✔";
+    color: #274b28;
+    background-color: #6eb263;
+    padding: 3px 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions {
+    margin-top: 10px;
+    color: #758286;
+    font-size: 18px;
+}
+
+.connector {
+    width: 60px;
+    height: 2px;
+    background-color: #444a52;
+}
+
